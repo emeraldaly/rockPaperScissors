@@ -15,6 +15,7 @@ $(document).ready(function() {
     $("#stopGame").show();
     $("#gameCounter").show();
     $("#gameGo").show();
+    $(this).hide();
   });
 
   $("#stopGame").on("click", function () {
