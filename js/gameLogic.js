@@ -7,15 +7,18 @@ $(document).ready(function() {
   $("#directions").hide();
   
   $("#startGame").on("click", function () {
+    $("#stopGame").hide(); 
+    $("#gameCounter").hide();
+    $("#gameGo").hide();
     $("#directions").show();
     $(this).hide();
   });
 
   $("#go").on("click", function () {
-    $("#stopGame").show();
+    $("#stopGame").show(); 
     $("#gameCounter").show();
     $("#gameGo").show();
-    $(this).hide();
+    $("#directions").hide();
   });
 
   $("#stopGame").on("click", function () {
