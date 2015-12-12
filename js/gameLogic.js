@@ -1,6 +1,29 @@
 var buttonChoices = ["rock", "paper", "scissor"];
 
 $(document).ready(function() {
+  $("#stopGame").hide(); 
+  $("#gameCounter").hide();
+  $("#gameGo").hide();
+  $("#directions").hide();
+  
+  $("#startGame").on("click", function () {
+    $("#directions").show();
+    $(this).hide();
+  });
+
+  $("#go").on("click", function () {
+    $("#stopGame").show();
+    $("#gameCounter").show();
+    $("#gameGo").show();
+  });
+
+  $("#stopGame").on("click", function () {
+    $("#startGame").show();
+    $("#gameCounter").hide();
+    $("#gameGo").hide();
+    $("#directions").hide();
+    $(this).hide();
+  });
 
   function bindControls() {
     $(".btn-primary").on("click", function() {
