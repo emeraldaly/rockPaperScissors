@@ -16,3 +16,22 @@ When make choice, shows what computer chose
 Announces who won
 Number of rounds increases by one
 Person who won has their score increased
+
+Scissor cuts paper
+Paper covers rock 
+Rock crushes Lizard
+Lizard poisons spock
+Spock smashes scissors
+Scissors decapitates lizard
+Lizard eats paper
+paper disproves spock
+Apock vaporizes rock
+Rock crushes scissor
+ 
+
+
+
+ 
+
+
+spock vaporizes 

@@ -1,4 +1,4 @@
-var buttonChoices = ["rock", "paper", "scissor"];
+var buttonChoices = ["rock", "paper", "scissor", "lizard", "spock"];
 
 $(document).ready(function() {
   $("#stopGame").hide(); 
@@ -38,21 +38,7 @@ $(document).ready(function() {
 
     if(computerChoice === userChoice) {
       alert("Tie!");
-//0-rock; 1-paper; 2-scissor
     } 
-    else if(computerChoice === "rock" && userChoice === "scissor") {
-      // Computer gets a point
-      alert("Computer wins!");
-    
-    } 
-    else if(computerChoice === "rock" && userChoice === "paper") {
-      // User gets a point
-      alert("User wins!");
-    }
-    else if(computerChoice === "paper" && userChoice === "rock") {
-      // Computer gets a point
-      alert("Computer wins!");
-    }
     else if(computerChoice === "paper" && userChoice === "scissor") {
       // User gets a point
       alert("User wins!");
@@ -61,6 +47,74 @@ $(document).ready(function() {
       // Computer gets a point
       alert("Computer!");
     }
+    else if(computerChoice === "rock" && userChoice === "paper") {
+      // User gets a point
+      alert("User wins!");
+    }
+    else if(computerChoice === "paper" && userChoice === "rock") {
+      // Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(computerChoice === "rock" && useChoice === "lizard") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(userChoice === "lizard" && computerChoice === "rock") {
+      //user gets a point
+      alert("User wins!");
+    }
+    else if(computerChoice === "lizard" && useChoice === "spock") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(userChoice === "spock" && computerChoice === "lizard") {
+      //user gets a point
+      alert("User wins!");
+    }  
+    else if(computerChoice === "spock" && useChoice === "scissor") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(userChoice === "scissor" && computerChoice === "spock") {
+      //user gets a point
+      alert("User wins!");
+    }
+    else if(userChoice === "scissor" && computerChoice === "lizard") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(computerChoice === "lizard" && useChoice === "scissor") {
+      //User gets a point
+      alert("User wins!");
+    }
+    else if(computerChoice === "lizard" && useChoice === "paper") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(userChoice === "paper" && computerChoice === "lizard") {
+      //user gets a point
+      alert("User wins!");
+    }
+    else if(userChoice === "paper" && computerChoice === "spock") {
+      //computer gets a point
+      alert("Computer wins!");
+    }
+    else if(computerChoice === "spock" && useChoice === "paper") {
+      //User gets a point
+      alert("User wins!");
+    }
+    else if(computerChoice === "spock" && useChoice === "rock") {
+      //Computer gets a point
+      alert("Computer wins!");
+    }
+    else if(userChoice === "rock" && computerChoice === "spock") {
+      //user gets a point
+      alert("User wins!");
+    }
+    else if(computerChoice === "rock" && userChoice === "scissor") {
+      // Computer gets a point
+      alert("Computer wins!");
+    } 
     else if(computerChoice === "scissor" && userChoice === "rock") {
       // User gets a point
       alert("User wins!");
@@ -71,5 +125,4 @@ $(document).ready(function() {
 
   bindControls();
 
-  
 });
