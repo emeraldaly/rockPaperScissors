@@ -34,8 +34,6 @@ $(document).ready(function() {
       var userChoice = $(this).attr("id");
       var randomIndex=Math.floor(Math.random() * buttonChoices.length);
       var computerChoice = buttonChoices[randomIndex];
-      // $("#myModal").modal("show");
-      // $(".modal-body").html(userChoice + "/" + computerChoice);
 
     if(computerChoice === userChoice) {
       $("#myModal").modal("show");
