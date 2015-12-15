@@ -11,8 +11,6 @@ $(document).ready(function() {
       var userChoice = $(this).attr("id");
       var randomIndex=Math.floor(Math.random() * buttonChoices.length);
       var computerChoice = buttonChoices[randomIndex];
-      
-      // alert(userChoice + "/" + computerChoice)
 
     if(computerChoice === userChoice) {
       // alert("Tie")
@@ -21,35 +19,27 @@ $(document).ready(function() {
     } 
     else if(computerChoice === "paper" && userChoice === "scissor") {
       // User gets a point
-      // alert("You win")
       $("#myModal").modal("show");
       $(".modal-body").html(userChoice + "/" + computerChoice + " You Win!");
-      // userScore++;
       rockPaperScissor.gameState.userScore++;
     }
     else if(computerChoice === "scissor" && userChoice === "paper") {
       // Computer gets a point
       $("#myModal").modal("show");
       $(".modal-body").html(userChoice + "/" + computerChoice + " The Machine Wins!");
-      // computerScore++;
       rockPaperScissor.gameState.computerScore++;
-      // alert("Computer won")
     }
     else if(computerChoice === "rock" && userChoice === "paper") {
       // User gets a point
       $("#myModal").modal("show");
       $(".modal-body").html(userChoice + "/" + computerChoice + " You Win!");
-      // userScore++;
       rockPaperScissor.gameState.userScore++;
-    // alert("You win")
     }
     else if(computerChoice === "paper" && userChoice === "rock") {
       // Computer gets a point
       $("#myModal").modal("show");
       $(".modal-body").html(userChoice + "/" + computerChoice + " The Machine Wins!");
-      // computerScore++;
       rockPaperScissor.gameState.computerScore++;
-    // alert("Computer won")
     }
     // else if(computerChoice === "rock" && userChoice === "lizard") {
     //   //Computer gets a point
@@ -125,17 +115,13 @@ $(document).ready(function() {
       // Computer gets a point
      $("#myModal").modal("show");
      $(".modal-body").html(userChoice + "/" + computerChoice + " The Machine Wins!");
-      // computerScore++;
       rockPaperScissor.gameState.computerScore++;
-    // alert("Computer won")
     } 
     else if(computerChoice === "scissor" && userChoice === "rock") {
       // User gets a point
       $("#myModal").modal("show");
-      $(".modal-body").html(userChoice + "/" + computerChoice + " You Win!");
-      // userScore++;
+      $(".modal-body").html(userChoice + "/" + computerChoice + " You Win!"); 
       rockPaperScissor.gameState.userScore++;
-    // alert("You win")
     }
     $("#myModal").modal("show");
     rockPaperScissor.gameState.roundCount++;
