@@ -12,7 +12,10 @@ col-md-8 {
 /*.pulse {
   visibility: hidden;
 }*/
-
+.btn-primary {
+  height: 100px;
+  width: 150px;
+}
 button img {
   height: 80px;
 }

@@ -21,9 +21,18 @@
         </div>
         <div class ="row">   
             <div class="col-md-6 col-md-offset-2" id="gameGo">
-                <button class="btn btn-primary" id="rock" type="submit"><img src="images/rock.png" alt="Rock"></button>
-                <button class="btn btn-primary" id="paper" type="submit"><img src="images/paperbasic.png" alt="Paper"></button>
-                <button class="btn btn-primary" id="scissor" type="submit"><img src="images/scissoropen.png" alt="Scissor"></button>
+                <button class="btn btn-primary" class="pulse" id="rock" type="submit">
+                  <div><img src="images/rock.png" id="rock" alt="Rock"></div>
+                  <!--<div><img src="images/rockbroke.png" id="rockBroke" alt="Rock"></div>-->
+                </button>
+                <button class="btn btn-primary" id="paper" type="submit">
+                  <div><img src="images/paperbasic.png" id="paper" alt="Paper"></div>
+                  <!--<div><img src="images/paperrip.png" id="paperRip" alt="Paper"></div>-->
+                </button>
+                <button class="btn btn-primary" id="scissor" type="submit">
+                <div><img src="images/scissoropen.png" id="scissorOpen" alt="Scissor"></div>
+                <!--<div><img src="images/scissorsclose.png" id="scissorClose" alt="Scissor"></div>-->
+                </button>
                <!--  <button class="btn btn-primary" id="lizard" type="submit">Lizard</button>
                 <button class="btn btn-primary" id="spock" type="submit">Spock</button> -->
             </div>
@@ -32,12 +41,12 @@
             <div class="col-md-4 col-md-offset-2">
                 <ul style="list-style-type:none">
                   <li><strong>Your Score: </strong><span id="userScore">0</span></li>
-                  <li><strong>Machine Score: </strong><span id="userScore">0</span></li>
+                  <li><strong>Machine Score: </strong><span id="computerScore">0</span></li>
                   <li><strong>Round Count: </strong><span id="roundCount">1</span></li>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4" id="directions">
+            <div class="col-md-4 col-md-offset-4" id="directions">
                 <p>Directions: Welcome to Rock, Paper, Scissor Your opponent is the machine (aka your computer).</p>
                 <ul>
                     <li>Scissors cuts Paper</li>
@@ -74,7 +83,9 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/gameLogic.js"></script>
-        <script type="text/javascript" src="js/scoreTracker.js"></script>
+        <script type="text/javascript" src="js/buttons.js"></script>
+        <!--<script type="text/javascript" src="js/scoreTracker.js"></script>-->
+        <!-- <script type="text/javascript" src="js/animation.js"></script>-->
         
 </body>
 
