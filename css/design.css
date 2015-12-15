@@ -9,6 +9,10 @@ col-md-8 {
   color: turquoise;
 }
 
+/*.pulse {
+  visibility: hidden;
+}*/
+
 button img {
-  height: 100px;
+  height: 80px;
 }
