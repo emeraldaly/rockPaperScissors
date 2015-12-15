@@ -41,6 +41,7 @@ $(document).ready(function() {
       $(".modal-body").html(userChoice + "/" + computerChoice + " The Machine Wins!");
       rockPaperScissor.gameState.computerScore++;
     }
+    //Code to include lizard & spock.. created bugs :(
     // else if(computerChoice === "rock" && userChoice === "lizard") {
     //   //Computer gets a point
     //   $("#myModal").modal("show");

@@ -15,4 +15,19 @@ $(document).ready(function() {
     $("#" + tagName).html(rockPaperScissor.gameState[tagName]);
   });
 
+//Code for 5 rounds
+  /*if userScore + computerScore === 5
+    $("#myModal").modal("show");
+      $(".modal-body").html("Five Rounds have passed!");
+    
+    if userScore > computerScore
+      $("#myModal").modal("show");
+      $(".modal-body").html("You win!");
+
+    else if computerScore > userScore
+      $("#myModal").modal("show");
+      $(".modal-body").html("You win!");*/
+
+
+
 });

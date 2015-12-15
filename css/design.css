@@ -13,9 +13,12 @@ col-md-8 {
   visibility: hidden;
 }*/
 .btn-primary {
-  height: 100px;
-  width: 150px;
+  height: 80px;
+  width: 80px;
 }
 button img {
-  height: 80px;
+  height: 40px;
+}
+.navbar img {
+  height: 30px;
 }

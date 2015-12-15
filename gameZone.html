@@ -11,9 +11,35 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img src="images/rock.png" class="navBar" id="rock" alt="Rock">
+        <img src="images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+        <img src="images/rockbroke.png" class="navBar" id="rocklose" alt="RockLose">
+        <img src="images/rock.png" class="navBar" id="rock" alt="Rock">
+        <img src="images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+        <img src="images/scissorbreak.png" class="navBar" id="scissorlose" alt="scissorLose">
+        <img src="images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+        <img src="images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+        <img src="images/paperrip.png" class="navBar" id="paperlose" alt="PaperLose">
+        <img src="images/rock.png" class="navBar" id="rock" alt="Rock">
+        <img src="images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+        <img src="images/rockbroke.png" class="navBar" id="rocklose" alt="RockLose">
+        <img src="images/rock.png" class="navBar" id="rock" alt="Rock">
+        <img src="images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+        <img src="images/scissorbreak.png" class="navBar" id="scissorlose" alt="scissorLose">
+        <img src="images/paperbasic.png" class="navBar" id="paper" alt="Paper">
+        <img src="images/scissoropen.png" class="navBar" id="scissor" alt="Scissor">
+        <img src="images/paperrip.png" class="navBar" id="paperlose" alt="PaperLose">
+      </a>
+    </div>
+  </div>
+</nav>
     <div class="container-fluid">  
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-md-offset-1">
                 <button class="btn btn-success" id="startGame" type="submit">Start Game</button>
                 <button class="btn btn-danger" id="stopGame" type="submit">Stop Game</button>
                 <br />
@@ -38,7 +64,7 @@
             </div>
         </div>
         <div class="row" id="gameCounter">
-            <div class="col-md-4 col-md-offset-2">
+            <div class="col-md-4 col-md-offset-1">
                 <ul style="list-style-type:none">
                   <li><strong>Your Score: </strong><span id="userScore">0</span><button class="btn btn-info btn-block" data-tag="userScore">Increment User Score</button></li>
                   <li><strong>Machine Score: </strong><span id="computerScore">0</span><button class="btn btn-info btn-block" data-tag="computerScore">Increment Computer Score</button></li>
@@ -85,6 +111,7 @@
         <script type="text/javascript" src="js/buttons.js"></script>
          <script type="text/javascript" src="js/gameLogic.js"></script>
         <script type="text/javascript" src="js/scoreTracker.js"></script>
+        <script type="text/javascript" src="js/navAnimated.js"></script>
         <!-- <script type="text/javascript" src="js/animation.js"></script>-->
         
 </body>
