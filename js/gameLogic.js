@@ -1,14 +1,17 @@
 var buttonChoices = ["rock", "paper", "scissor"];
 
 $(document).ready(function() {
+
+      var userScore = 0;
+      var computerScore = 0;
+      var roundCount = 1;
+      
   function bindControls() {
     $(".btn-primary").on("click", function() {
       var userChoice = $(this).attr("id");
       var randomIndex=Math.floor(Math.random() * buttonChoices.length);
       var computerChoice = buttonChoices[randomIndex];
-      // var userScore = 0;
-      // var computerScore = 0;
-      // var roundCount = 1;
+      
       // alert(userChoice + "/" + computerChoice)
 
     if(computerChoice === userChoice) {
