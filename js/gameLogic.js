@@ -1,4 +1,4 @@
-var buttonChoices = ["rock", "paper", "scissor"];
+var buttonChoices = ["rock", "paper", "scissor", "lizard", "spock"];
 
 $(document).ready(function() {
 
@@ -42,76 +42,90 @@ $(document).ready(function() {
       rockPaperScissor.gameState.computerScore++;
     }
     //Code to include lizard & spock.. created bugs :(
-    // else if(computerChoice === "rock" && userChoice === "lizard") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(userChoice === "lizard" && computerChoice === "rock") {
-    //   //user gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
-    // else if(computerChoice === "lizard" && userChoice === "spock") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(userChoice === "spock" && computerChoice === "lizard") {
-    //   //user gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }  
-    // else if(computerChoice === "spock" && userChoice === "scissor") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(userChoice === "scissor" && computerChoice === "spock") {
-    //   //user gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
-    // else if(userChoice === "scissor" && computerChoice === "lizard") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(computerChoice === "lizard" && userChoice === "scissor") {
-    //   //User gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
-    // else if(computerChoice === "lizard" && userChoice === "paper") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(userChoice === "paper" && computerChoice === "lizard") {
-    //   //user gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
-    // else if(userChoice === "paper" && computerChoice === "spock") {
-    //   //computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(computerChoice === "spock" && userChoice === "paper") {
-    //   //User gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
-    // else if(computerChoice === "spock" && userChoice === "rock") {
-    //   //Computer gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("The Machine Wins!");
-    // }
-    // else if(userChoice === "rock" && computerChoice === "spock") {
-    //   //user gets a point
-    //   $("#myModal").modal("show");
-    //   $(".modal-body").html("You Win!");
-    // }
+    else if(computerChoice === "rock" && userChoice === "lizard") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(userChoice === "lizard" && computerChoice === "rock") {
+      //user gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
+    else if(computerChoice === "lizard" && userChoice === "spock") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(userChoice === "spock" && computerChoice === "lizard") {
+      //user gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }  
+    else if(computerChoice === "spock" && userChoice === "scissor") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(userChoice === "scissor" && computerChoice === "spock") {
+      //user gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
+    else if(userChoice === "scissor" && computerChoice === "lizard") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(computerChoice === "lizard" && userChoice === "scissor") {
+      //User gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
+    else if(computerChoice === "lizard" && userChoice === "paper") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(userChoice === "paper" && computerChoice === "lizard") {
+      //user gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
+    else if(userChoice === "paper" && computerChoice === "spock") {
+      //computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(computerChoice === "spock" && userChoice === "paper") {
+      //User gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
+    else if(computerChoice === "spock" && userChoice === "rock") {
+      //Computer gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "The Machine Wins!");
+      rockPaperScissor.gameState.computerScore++;
+    }
+    else if(userChoice === "rock" && computerChoice === "spock") {
+      //user gets a point
+      $("#myModal").modal("show");
+      $(".modal-body").html(userChoice + "/" + computerChoice + "You Win!");
+      rockPaperScissor.gameState.userScore++;
+    }
     else if(computerChoice === "rock" && userChoice === "scissor") {
       // Computer gets a point
      $("#myModal").modal("show");
